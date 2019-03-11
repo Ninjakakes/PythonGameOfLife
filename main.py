@@ -50,7 +50,7 @@ class Cell:
         #self.color = BLACK
 
     def draw(self):
-        ''' fills the surface with white or black depending on if the cell is alive or dead then blits the surface to the main display '''
+        ''' chooses a surface depending on if the cell is alive or dead then blits the surface to the main display '''
         if self.alive:
             #ALIVE_SURFACE.fill(self.color)
             main_surface.blit(ALIVE_SURFACE, (self.x*CELL_WIDTH, self.y*CELL_HEIGHT))
